@@ -1,155 +1,130 @@
+/* --- RESET & BASE --- */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color:   #1A1A1A;
-    background-image: ;
-    background-attachment: fixed;
-    margin: 0;
-    word-wrap: break-word;cursor:url(https://i.postimg.cc/C1wtkYhP/kuwo.png), auto;
-}
-a { text-decoration:none; }
-
-#sbw1, #sbw2, .post, #pi, #notecon { 
-    width: 210px;
-    padding: 0 10px 10px 10px;
-    border-radius: 5px;
-    border: 1px solid #191919;
-    box-shadow: 10px 10px 0 #151515;
-    background-color: #202020;  
-    
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #121212; /* Tu color o imagen de fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace, sans-serif;
 }
 
+/* --- VENTANA PRINCIPAL (ESCRITORIO) --- */
 #sbw1 {
-    position: fixed;
-    top: 100px;
-    left: 450px;
+  position: relative;
+  z-index: 50;
+  width: 520px;
+  max-width: 95vw;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  box-shadow: 4px 4px 0px #000;
+  padding: 10px;
+  margin: 40px auto;
 }
 
-.wpic {
-    width: 210px;
-    display: block;filter: blur(0px)}
-.wpic:hover {filter: blur(0.8px);
-}
-
-.bt, .bt2, .bt3, .bt4 {
-    height: 24px;
-    background-color: #2B2B2B;
-    width: 210px;
-    padding-left: 20px;
-    margin-left: -10px;
-    margin-bottom: 10px;
-    line-height: 24px;
-    font-family: consolas;
-    font-size: 8px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #878786;
-}
-
-.mv, .mv2, .mv3, .mv4 {
-    position: absolute;
-    width: 100px;
-    margin: 0 150px;
+/* Barra superior y botones */
+.mv, .mv2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  background: #2a2a2a;
+  padding: 4px 8px;
+  border: 1px solid #333;
 }
 
 .rightbuttons {
-    font-family: consolas;
-    font-size: 10px;
-    float: left;
-    margin-right: 1px;
-    background-color: #2B2B2B;
-    color: #fff;
-    width: 20px;
-    text-align: center;
-    height: 16px;
-    line-height: 17px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 11px;
+  line-height: 1;
 }
 
-#rbi {
-    border-radius: 0 0 0 3px;
-    line-height: 13px;
+.bt {
+  color: #ddd;
+  font-size: 12px;
+  padding: 4px 0 8px 4px;
 }
 
-#rbii {
-    line-height: 18px;
-    font-size: 8px;
+/* --- VENTANA INTERIOR --- */
+#sbw2 {
+  position: relative;
+  background: #222;
+  border: 1px solid #333;
+  padding: 12px;
+  margin-top: 5px;
 }
 
-#rbx {
-    border-radius: 0 0 3px 0;
-}
-
-#sbw2, #pi {
-    position: absolute;
-    background-color: #202020;
-    margin: -40px 160px;
-    font-family: consolas;
-    font-size: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 140px;
-    z-index: 1;
-    margin: 150px 160px;
-}
-
-.mv2 {margin-left: 78px;}
-
-.bt2 {
-    width: 140px;
-    letter-spacing: 0;
-}
-
-#iv {
-    position: absolute;
-    margin: 14px 30px;
-    width: 150px;
-    height: 36px;
-    padding-left: 6px;
-    z-index: 1000000000;
-    margin: -18px -187px;
-
-}
-
-
-.ifonts a, .ifonts2 a {color: #727274;transition: 0.2s;}
-.ifontsbg, .ifontsbg2, .ifontsbg3 {
-    padding: 3px; 
-    background-color: #2b2b2b;  
-    box-shadow: 7px 3px 0 #151515;
-
-    width: 15px;
-    height: 15px;
-    text-align: center;
-    margin: 12px 6px 6px 0;
-    float: left;
-    border-radius: 3px;
-    font-size: 10px;
-    line-height: 15px;
-    transition: 0.2s;
-}
-.ifontsbg:hover {
-    background-color: #b2b2b2;
-    color:#ffffff;
-}
 .desc {
-    font-family: consolas;
-    font-size: 7px;
-    color:#727274;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.desc a {
-    background-color: #fff6fe;
-    color: #c6aec4;
+  color: #eee;
+  font-size: 13px;
+  margin: 10px 0;
+  line-height: 1.4;
 }
 
-.desc a:hover {
-    border-bottom: 1px solid #c6aec4;
+.desc p {
+  margin: 5px 0 0 0;
+  color: #888;
+  font-size: 11px;
 }
 
-.desc b,strong { color: #727274; }
-.desc i,em { color: #cccccc; }
+/* Imagen flotante */
+.wpic {
+  max-width: 120px;
+  height: auto;
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+  z-index: 60;
+  pointer-events: none;
+}
 
-#content {
-    margin: 60px 470px;
-    width: 600px;
-    margin: 60px 490px;
+/* Iconos / Extras */
+#iv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ifonts a {
+  color: #ff5555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/* ===================================================
+   CORRECCIÓN PARA MÓVIL (PANTALLAS MENORES A 768px)
+   =================================================== */
+@media (max-width: 768px) {
+  body {
+    display: block;
+    padding: 15px 10px;
+  }
+
+  #sbw1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 10px auto !important;
+    position: relative !important;
+  }
+
+  #sbw2 {
+    width: 100% !important;
+  }
+
+  /* Evita que la imagen se salga de la pantalla en vertical */
+  .wpic {
+    position: static !important;
+    display: block;
+    margin: 15px auto 0 auto;
+    max-width: 90px;
+  }
 }
