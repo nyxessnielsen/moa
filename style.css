@@ -1,64 +1,155 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Moa</title>
-  <link rel="stylesheet" href="./style.css">
+body {
+    background-color:   #1A1A1A;
+    background-image: ;
+    background-attachment: fixed;
+    margin: 0;
+    word-wrap: break-word;cursor:url(https://i.postimg.cc/C1wtkYhP/kuwo.png), auto;
+}
+a { text-decoration:none; }
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<body>
-
-<div id="sbw1">
-
-<div class="mv">
+#sbw1, #sbw2, .post, #pi, #notecon { 
+    width: 210px;
+    padding: 0 10px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #191919;
+    box-shadow: 10px 10px 0 #151515;
+    background-color: #202020;  
     
-<div class="rightbuttons" id="rbi">_</div>
-<div class="rightbuttons" id="rbii">▢</div>
-<div class="rightbuttons" id="rbx">x</div>
-    
-</div><!--mv-->
+}
 
-<div class="bt">> headache</div>
+#sbw1 {
+    position: fixed;
+    top: 100px;
+    left: 450px;
+}
+
+.wpic {
+    width: 210px;
+    display: block;filter: blur(0px)}
+.wpic:hover {filter: blur(0.8px);
+}
+
+.bt, .bt2, .bt3, .bt4 {
+    height: 24px;
+    background-color: #2B2B2B;
+    width: 210px;
+    padding-left: 20px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-family: consolas;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #878786;
+}
+
+.mv, .mv2, .mv3, .mv4 {
+    position: absolute;
+    width: 100px;
+    margin: 0 150px;
+}
+
+.rightbuttons {
+    font-family: consolas;
+    font-size: 10px;
+    float: left;
+    margin-right: 1px;
+    background-color: #2B2B2B;
+    color: #fff;
+    width: 20px;
+    text-align: center;
+    height: 16px;
+    line-height: 17px;
+}
+
+#rbi {
+    border-radius: 0 0 0 3px;
+    line-height: 13px;
+}
+
+#rbii {
+    line-height: 18px;
+    font-size: 8px;
+}
+
+#rbx {
+    border-radius: 0 0 3px 0;
+}
+
+#sbw2, #pi {
+    position: absolute;
+    background-color: #202020;
+    margin: -40px 160px;
+    font-family: consolas;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 140px;
+    z-index: 1;
+    margin: 150px 160px;
+}
+
+.mv2 {margin-left: 78px;}
+
+.bt2 {
+    width: 140px;
+    letter-spacing: 0;
+}
+
+#iv {
+    position: absolute;
+    margin: 14px 30px;
+    width: 150px;
+    height: 36px;
+    padding-left: 6px;
+    z-index: 1000000000;
+    margin: -18px -187px;
+
+}
 
 
-<div id="sbw2">
+.ifonts a, .ifonts2 a {color: #727274;transition: 0.2s;}
+.ifontsbg, .ifontsbg2, .ifontsbg3 {
+    padding: 3px; 
+    background-color: #2b2b2b;  
+    box-shadow: 7px 3px 0 #151515;
 
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin: 12px 6px 6px 0;
+    float: left;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 15px;
+    transition: 0.2s;
+}
+.ifontsbg:hover {
+    background-color: #b2b2b2;
+    color:#ffffff;
+}
+.desc {
+    font-family: consolas;
+    font-size: 7px;
+    color:#727274;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.desc a {
+    background-color: #fff6fe;
+    color: #c6aec4;
+}
 
-<div id="mugen">
-<div class="fuu">
-</div>
-</div><!--mugen-->
+.desc a:hover {
+    border-bottom: 1px solid #c6aec4;
+}
 
+.desc b,strong { color: #727274; }
+.desc i,em { color: #cccccc; }
 
-<div class="mv2">
-<div class="rightbuttons" id="rbi">_</div>
-<div class="rightbuttons" id="rbii">▢</div>
-<div class="rightbuttons" id="rbx">x</div>
-</div><!--mv2-->
-<div class="bt2"></div>
-
-<div class="desc"><b>We are all going to hell, 
-but not today<p>─Scar</i>
-</div> 
-<div id="iv">
-<div class="dbl"></div>
-<div class="ifontsbg"><div class="ifonts"><a></i>✖︎</a></div>
-</span>
-</div>
-
-</div><!--iv-->
-
-</div><!--sbw2-->
-
-
-<img class="wpic" src="https://i.postimg.cc/KKH2KtBr/365.png">
-
-</div><!--sbw1-->
-
-<div id="content">
-<!-- partial -->
-  
-</body>
-</html>
+#content {
+    margin: 60px 470px;
+    width: 600px;
+    margin: 60px 490px;
+}
