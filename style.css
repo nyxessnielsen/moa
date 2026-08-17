@@ -1,4 +1,4 @@
-body {
+Body {
     background-color:   #1A1A1A;
     background-image: ;
     background-attachment: fixed;
@@ -14,7 +14,6 @@ a { text-decoration:none; }
     border: 1px solid #191919;
     box-shadow: 10px 10px 0 #151515;
     background-color: #202020;  
-    
 }
 
 #sbw1 {
@@ -105,16 +104,13 @@ a { text-decoration:none; }
     padding-left: 6px;
     z-index: 1000000000;
     margin: -18px -187px;
-
 }
-
 
 .ifonts a, .ifonts2 a {color: #727274;transition: 0.2s;}
 .ifontsbg, .ifontsbg2, .ifontsbg3 {
     padding: 3px; 
     background-color: #2b2b2b;  
     box-shadow: 7px 3px 0 #151515;
-
     width: 15px;
     height: 15px;
     text-align: center;
@@ -152,4 +148,19 @@ a { text-decoration:none; }
     margin: 60px 470px;
     width: 600px;
     margin: 60px 490px;
+}
+
+/* ==========================================
+   AJUSTE PARA CELULAR (SIN CAMBIAR EL DISEÑO)
+   ========================================== */
+@media (max-width: 768px) {
+    #sbw1 {
+        position: absolute;
+        top: 30px;
+        left: max(10px, calc(50% - 160px));
+    }
+    #content {
+        margin: 20px auto;
+        width: 90%;
+    }
 }
