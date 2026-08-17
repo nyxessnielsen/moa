@@ -1,130 +1,64 @@
-/* --- RESET & BASE --- */
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Moa</title>
+  <link rel="stylesheet" href="./style.css">
 
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-color: #121212; /* Tu color o imagen de fondo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: monospace, sans-serif;
-}
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
 
-/* --- VENTANA PRINCIPAL (ESCRITORIO) --- */
-#sbw1 {
-  position: relative;
-  z-index: 50;
-  width: 520px;
-  max-width: 95vw;
-  background: #1a1a1a;
-  border: 1px solid #444;
-  box-shadow: 4px 4px 0px #000;
-  padding: 10px;
-  margin: 40px auto;
-}
+<div id="sbw1">
 
-/* Barra superior y botones */
-.mv, .mv2 {
-  display: flex;
-  justify-content: flex-end;
-  gap: 6px;
-  background: #2a2a2a;
-  padding: 4px 8px;
-  border: 1px solid #333;
-}
+<div class="mv">
+    
+<div class="rightbuttons" id="rbi">_</div>
+<div class="rightbuttons" id="rbii">▢</div>
+<div class="rightbuttons" id="rbx">x</div>
+    
+</div><!--mv-->
 
-.rightbuttons {
-  cursor: pointer;
-  color: #aaa;
-  font-size: 11px;
-  line-height: 1;
-}
-
-.bt {
-  color: #ddd;
-  font-size: 12px;
-  padding: 4px 0 8px 4px;
-}
-
-/* --- VENTANA INTERIOR --- */
-#sbw2 {
-  position: relative;
-  background: #222;
-  border: 1px solid #333;
-  padding: 12px;
-  margin-top: 5px;
-}
-
-.desc {
-  color: #eee;
-  font-size: 13px;
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-.desc p {
-  margin: 5px 0 0 0;
-  color: #888;
-  font-size: 11px;
-}
-
-/* Imagen flotante */
-.wpic {
-  max-width: 120px;
-  height: auto;
-  position: absolute;
-  right: -30px;
-  bottom: -20px;
-  z-index: 60;
-  pointer-events: none;
-}
-
-/* Iconos / Extras */
-#iv {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.ifonts a {
-  color: #ff5555;
-  text-decoration: none;
-  font-size: 14px;
-}
+<div class="bt">> headache</div>
 
 
-/* ===================================================
-   CORRECCIÓN PARA MÓVIL (PANTALLAS MENORES A 768px)
-   =================================================== */
-@media (max-width: 768px) {
-  body {
-    display: block;
-    padding: 15px 10px;
-  }
+<div id="sbw2">
 
-  #sbw1 {
-    width: 100% !important;
-    max-width: 100% !important;
-    left: 0 !important;
-    top: 0 !important;
-    margin: 10px auto !important;
-    position: relative !important;
-  }
 
-  #sbw2 {
-    width: 100% !important;
-  }
+<div id="mugen">
+<div class="fuu">
+</div>
+</div><!--mugen-->
 
-  /* Evita que la imagen se salga de la pantalla en vertical */
-  .wpic {
-    position: static !important;
-    display: block;
-    margin: 15px auto 0 auto;
-    max-width: 90px;
-  }
-}
+
+<div class="mv2">
+<div class="rightbuttons" id="rbi">_</div>
+<div class="rightbuttons" id="rbii">▢</div>
+<div class="rightbuttons" id="rbx">x</div>
+</div><!--mv2-->
+<div class="bt2"></div>
+
+<div class="desc"><b>We are all going to hell, 
+but not today<p>─Scar</i>
+</div> 
+<div id="iv">
+<div class="dbl"></div>
+<div class="ifontsbg"><div class="ifonts"><a></i>✖︎</a></div>
+</span>
+</div>
+
+</div><!--iv-->
+
+</div><!--sbw2-->
+
+
+<img class="wpic" src="https://i.postimg.cc/KKH2KtBr/365.png">
+
+</div><!--sbw1-->
+
+<div id="content">
+<!-- partial -->
+  
+</body>
+</html>
